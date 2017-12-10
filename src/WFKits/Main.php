@@ -9,7 +9,7 @@ use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat as C;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-class Main extends WFKits implements Listener{
+class Main extends pluginbase implements Listener{
 public function onLoad(){
                     $this->getLogger()->info("Plugin Loading");
           }
