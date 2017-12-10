@@ -1,16 +1,31 @@
 name: WitheredFactionKits
+
 main: WFKits\Main
-api: 3.0.0-ALPHA8, 3.0.0-ALPHA9, 3.0.0-ALPHA10
+
+api: [3.0.0-ALPHA8, 3.0.0-ALPHA9, 3.0.0-ALPHA10]
+
 version: 0.0.1
+
 author: David2020xD
+
 load: POSTWORLD
+
 description: Kits.
+
 commands:
+
   wizard:
+
     description: "get a wand."
+
     permission: op
+
 permissions:
+
   wizard.kit:
+
     default: op
+
     description: "get a wand"
+
     children:
