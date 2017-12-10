@@ -1,0 +1,7 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/David202020/-WitheredFactions-Kits
+branches:
+- master
+projects:
+  -WitheredFactions-Kits:
+    path: ""
+...
