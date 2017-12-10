@@ -9,16 +9,19 @@ use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat as C;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use pocketmine\event\player\PlayerCommandPreprocessEvent;
+
 class Main extends PluginBase implements Listener{
+	
 public function onLoad(){
-                    $this->getLogger()->info("Plugin Loading");
+                    $this->getServer()->getLogger()->info("Plugin Loading");
           }
           public function onEnable(){
-					$this->getServer()->getPluginManager()->registerEvents($this,$this);
+		    $this->getServer()->getPluginManager()->registerEvents($this,$this);
                     $this->getLogger()->info("Enabled Plugin");
           }
           public function onDisable(){
-                    $this->getLogger()->info("Plugin Disabled");
+                    $this->getServer()->getLogger()->info("Plugin Disabled");
           }
 	  public function onJoin(PlayerJoinEvent $event){
   		    $player = $event->getPlayer();
@@ -26,12 +29,12 @@ public function onLoad(){
    	            $this->getServer()->broadcastMessage(C::GREEN."Ducky Scammed the Server$! He's a dick!");
 	  }
 	  public function onCommand(CommandSender $sender,Command $cmd,string $label,array $args) : bool {
-			if($cmd->getname() == "wizard"){
- 			if(!$sender instanceof Player){
-          	    $sender->sendMessage("This Command Only Works for players! Please perform this command IN GAME!");
+		if($cmd->getname() == "wizard"){
+ 		if(!$sender instanceof Player){
+          	 $sender->sendMessage("This Command Only Works for players! Please perform this command IN GAME!");
      }else{
 $sender->sendmessage("Heres Your Wand");
-$sender->getInventory()->addItem(Item::get(280,0,1);
+$sender->getInventory()->addItem(Item::get(280,0,1));
 }
 }
 return true;
