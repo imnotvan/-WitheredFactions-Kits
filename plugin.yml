@@ -1,5 +1,5 @@
 name: WitheredFactionKits
-main: WFkits\Main
+main: WFKits\Main
 api: 3.0.0-ALPHA8, 3.0.0-ALPHA9, 3.0.0-ALPHA10
 version: 0.0.1
 author: David2020xD
