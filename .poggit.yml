@@ -3,5 +3,5 @@ branches:
 - master
 projects:
   -WitheredFactions-Kits:
-    path: ""
+    path: "WFKits"
 ...
