@@ -1,6 +1,5 @@
 <?php
 namespace WFKits;
-author: David202020;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerQuitEvent;
@@ -26,7 +25,7 @@ public function onJoin(PlayerJoinEvent $event){
    $player = $event->getPlayer();
    $name = $player->getName();
    $this->getServer()->broadcastMessage(C::GREEN."Ducky Scammed the Server$! He's a dick!")
-public function onCommand(CommandSender $sender,Command $cmd,$label,array $args) : bool {
+public function onCommand(CommandSender $sender,Command $cmd,string $label,array $args) : bool {
 }
 if($cmd->getname() == "wizard"){
  if(!$sender instanceof Player){
