@@ -10,9 +10,7 @@
  use pocketmine\command\Command;
  use pocketmine\command\CommandSender;
  use pocketmine\event\player\PlayerCommandPreprocessEvent;
- 
   class Main extends PluginBase implements Listener{
- 	
   	public function onLoad(){
             	$this->getLogger()->info("Plugin Loading");
 	}
@@ -35,7 +33,7 @@
  			if(!$sender instanceof Player){
 				$sender->sendMessage("This command only works for players! Please perform this command IN GAME!");
        			}else{
- 				$sender->sendmessage("Here's your wand, ".$sender->getName()."!");
+ 				$sender->sendmessage("Here's your wand, ".$sender->getName();
  				$sender->getInventory()->addItem(Item::get(280,0,1));
  			}
  		}
